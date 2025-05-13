@@ -60,7 +60,7 @@ class SheetLocalizationGenerator
   Future<Localizations> _downloadGoogleSheet(
       String documentId, String sheetId, String name) async {
     final url =
-        'https://docs.google.com/spreadsheets/d/$documentId/export?format=csv&id=$documentId&gid=$sheetId';
+  'https://docs.google.com/spreadsheets/d/$documentId/pub?output=csv&gid=$sheetId';
 
     log.info('Downloading csv from Google sheet url "$url" ...');
 
