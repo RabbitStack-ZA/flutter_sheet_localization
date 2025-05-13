@@ -60,9 +60,8 @@ class SheetLocalizationGenerator
   Future<Localizations> _downloadGoogleSheet(
     String documentIdOrUrl, String sheetId, String name) async {
       // If it's a full URL, use it directly; otherwise, build the old style URL
-      final url = documentIdOrUrl.startsWith('http')
-          ? documentIdOrUrl
-          : 'https://docs.google.com/spreadsheets/d/e/$documentIdOrUrl/export?format=csv&id=$documentIdOrUrl&gid=$sheetId';
+      //final url = 'https://docs.google.com/spreadsheets/d/e/$documentIdOrUrl/export?format=csv&id=$documentIdOrUrl&gid=$sheetId';
+      final url = 'https://docs.google.com/spreadsheets/d/e/$documentIdOrUrl/pub?output=csv&gid=$sheetId';
     
       log.info('Downloading csv from Google sheet url "$url" ...');
     
