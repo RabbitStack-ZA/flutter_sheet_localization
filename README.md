@@ -10,13 +10,13 @@ Add the following to your `pubspec.yaml`:
 dependencies:
   flutter_sheet_localization:
     git:
-      url: git@github.com:junaid-rs/flutter_sheet_localization.git
+      url: git@github.com:RabbitStack-ZA/flutter_sheet_localization.git
       path: flutter_sheet_localization
   flutter_localizations:
     sdk: flutter
   flutter_sheet_localization_generator: 
     git:
-      url: git@github.com:junaid-rs/flutter_sheet_localization.git
+      url: git@github.com:RabbitStack-ZA/flutter_sheet_localization.git
       path: flutter_sheet_localization_generator
   build_runner: <latest>
 ```
