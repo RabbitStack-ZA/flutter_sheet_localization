@@ -10,15 +10,13 @@ Add the following to your `pubspec.yaml`:
 dependencies:
   flutter_sheet_localization:
     git:
-      url: git@github.com:hacnguyen1412/flutter_sheet_localization.git
+      url: git@github.com:junaid-rs/flutter_sheet_localization.git
       path: flutter_sheet_localization
   flutter_localizations:
     sdk: flutter
-
-dev_dependencies:
   flutter_sheet_localization_generator: 
     git:
-      url: git@github.com:hacnguyen1412/flutter_sheet_localization.git
+      url: git@github.com:junaid-rs/flutter_sheet_localization.git
       path: flutter_sheet_localization_generator
   build_runner: <latest>
 ```
@@ -31,11 +29,9 @@ Create a sheet with your translations (following the bellow format, [an example 
 
 ![example](https://github.com/aloisdeniel/flutter_sheet_localization/raw/master/flutter_sheet_localization_generator/example.png)
 
-Make sure that your sheet is shared :
+Follow the [link](https://golayer.io/blog/google-sheets/export-google-sheets-to-csv/#:~:text=Open%20your%20Google%20Sheet%20and,%3E%20Share%20%3E%20Publish%20to%20web.&text=Publish%20to%20Web-,2.,csv) to publish the spreadsheet as a csv file.
 
-![share](https://github.com/aloisdeniel/flutter_sheet_localization/raw/master/flutter_sheet_localization_generator/share.png)
-
-Extract from the link the `DOCID` and `SHEETID` values : `https://docs.google.com/spreadsheets/d/<DOCID>/edit#gid=<SHEETID>`) :
+Extract from the link the `DOCID` and `SHEETID` values : `https://docs.google.com/spreadsheets/d/<DOCID>/pub?output=csv&gid=<SHEETID>` :
 
 #### 2. Declare a localization delegate
 
